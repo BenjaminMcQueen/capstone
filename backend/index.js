@@ -10,4 +10,4 @@ app.use(express.json);
 app.use(morgan('dev'));
 
 const URI = process.env.URI
-mongoose.connect
+// mongoose.connect

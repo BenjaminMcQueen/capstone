@@ -5,9 +5,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        {/* <Header /> */}
+        Nothing yet.
         <Routes>
 
         </Routes>
+
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

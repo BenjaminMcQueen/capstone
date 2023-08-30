@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 // import './Header.css';
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <h1>Cincinnati Traves</h1>
+          <h1>Cincinnati Travels</h1>
         </div>
         <ul className="nav-links">
           <li>

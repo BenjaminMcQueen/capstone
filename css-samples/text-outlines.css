@@ -1,0 +1,31 @@
+/* .Text-outline-color/shade-weight */
+
+.Text-outline-w-5 {
+    --outline-color: #fff5;
+
+    text-shadow: 0px 0.5px var(--outline-color), 0px -0.5px var(--outline-color), 0.5px 0px var(--outline-color), -0.5px 0px var(--outline-color);
+}
+
+.Text-outline-w-8 {
+    --outline-color: #fff8;
+
+    text-shadow: 0px 0.5px var(--outline-color), 0px -0.5px var(--outline-color), 0.5px 0px var(--outline-color), -0.5px 0px var(--outline-color);
+}
+
+.Text-outline-w-a {
+    --outline-color: #fffa;
+
+    text-shadow: 0px 0.5px var(--outline-color), 0px -0.5px var(--outline-color), 0.5px 0px var(--outline-color), -0.5px 0px var(--outline-color);
+}
+
+.Text-outline-w-d {
+    --outline-color: #fffd;
+
+    text-shadow: 0px 0.5px var(--outline-color), 0px -0.5px var(--outline-color), 0.5px 0px var(--outline-color), -0.5px 0px var(--outline-color);
+}
+
+.Text-outline-d-d {
+    --outline-color: #000d;
+
+    text-shadow: 0px 0.5px var(--outline-color), 0px -0.5px var(--outline-color), 0.5px 0px var(--outline-color), -0.5px 0px var(--outline-color);
+}

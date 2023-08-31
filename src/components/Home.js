@@ -14,14 +14,14 @@ function Home() {
           <img class="img" src={attractionscinn} alt="Cincinnati downtown" />
           {/* Content for image 1 */}
           <div class="overlay">
-            <h2>Explore Downtown Cincinnati</h2>
-            <p>Discover the beauty of Cincinnati's downtown ariel view</p>
+            <h1>Explore Downtown Cincinnati</h1>
+            <h4>Discover the beauty of Cincinnati's downtown ariel view</h4>
           </div>
         </div>
       </div>
 
       {/* section 2 starts here */}
-      <h2>History of Cincinnati</h2>
+      <h1>History of Cincinnati</h1>
       <div className="history-text">
         <p>
           Cincinnati's history is as vibrant and diverse as its chili toppings –

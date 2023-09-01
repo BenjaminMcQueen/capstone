@@ -1,13 +1,24 @@
+const ErrorLog = require('../models/ErrorLogs.model');
+
+function logError(err){
+    try {
+        const errorLog = ErrorLog.create({"error": err, "reason": err.reason || {}});
+        console.log("Error Logged: ", errorLog);
+    }
+    catch (catErr) { console.log("Catastrophic Failure: ", error); }
+}
+
 //A big object to store error handling functions
 const errorHandler = {
     diagnoseAndRespond: (err, res) => {
+        logError(err);
 
         if (err.name == "CastError" && err.kind == "ObjectId" && err.path == "_id") {
             res.send("The ID of the requested attraction was not found.");
             return;
         }
 
-        if (err._message === 'Attraction validation failed'){
+        if (err._message === 'Attraction validation failed') {
             res.status(400).send(err.message);
             return;
         }
@@ -18,7 +29,8 @@ const errorHandler = {
         res.status(400).send('Unknown error. \n' + err);
     },
 
-    diagnoseRequestAndRespond: (err, req, res) => {
+    diagnoseRequestAndRespond: async (err, req, res) => {
+        logError(err);
 
         if (err.name == "CastError" && err.kind == "ObjectId" && err.path == "_id") {
             res.send("The ID of the requested attraction was not found.");

@@ -1,6 +1,25 @@
 const Attraction = require('../models/Attractions.model');
 const ErrorHandler = require('./errorHandler');
 
+
+module.exports.delete = async (req, res) => {
+    Attraction.findByIdAndDelete(req.params.id)
+        .then(() => res.send("Attraction deleted."))
+        .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
+};
+
+module.exports.getAll = async (req, res) => {
+    Attraction.find()
+    .then(attractions => res.json(attractions))
+    .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
+}
+
+module.exports.getById = async (req, res) => {
+    Attraction.findById(req.params.id)
+        .then(attraction => res.json(attraction))
+        .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
+};
+
 module.exports.post = async (req, res) => {
     try {
         const attraction = await Attraction.create(req.body);
@@ -34,16 +53,4 @@ module.exports.update = async (req, res) => {
                 .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
          })
         .catch(err => ErrorHandler.diagnoseRequestAndRespond(err, req, res));
-};
-
-module.exports.get = async (req, res) => {
-    Attraction.findById(req.params.id)
-        .then(attraction => res.json(attraction))
-        .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
-};
-
-module.exports.delete = async (req, res) => {
-    Attraction.findByIdAndDelete(req.params.id)
-        .then(() => res.send("Attraction deleted."))
-        .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
 };

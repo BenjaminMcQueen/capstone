@@ -19,7 +19,6 @@ function App() {
           <Route path="/attractions" element={<Attractions />} />
           <Route path="/Map" element={<Map />} />
           <Route path="/contact" element={<Contact />} />
-          
         </Routes>
       </div>
     </Router>

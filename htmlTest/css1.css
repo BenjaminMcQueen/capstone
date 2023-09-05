@@ -1,0 +1,39 @@
+.attraction.card{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    background-color: lightcoral;
+    width: 90%;
+    /* testing */
+    border: solid 2px black;
+    /* /testing */
+}
+
+.attraction.card .details{
+    position: relative;
+    max-width: 57vw;
+}
+
+.attraction.card .other.details .indoors{
+
+}
+.attraction.card .other.details .childFriendly{
+
+}
+
+.attraction.card .title{
+    height: 50px;
+    max-width: 57vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.attraction.card img{
+    object-fit: contain;
+    border-radius: 5%;
+    max-height: 500px;
+    max-width: 30vw;
+    margin: 1vw;
+    align-self: flex-start;
+}
+

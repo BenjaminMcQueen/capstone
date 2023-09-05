@@ -2,22 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 5%;
-    background-color: lightcoral;
-    width: 90%;
+    background-color: #fe3434;
+    width: 95vw;
+    justify-content: center;
     /* testing */
-    border: solid 2px black;
+    /* border: solid 2px black; */
     /* /testing */
 }
 
 .attraction.card .details{
-    max-width: 57vw;
+    align-content: center;
+    max-width: 65%;
+    min-width: 400px;
 }
 
-.attraction.card .title{
-    height: 50px;
-    max-width: 57vw;
-    justify-content: center;
-    align-content: center;
+.attraction.card.addresses{
+    align-content: flex-start;
+}
+
+@media (max-width: 550px){
+    .attraction.card .details{
+        align-content: center;
+        max-width: 85vw;
+    }
 }
 
 .attraction.card img{
@@ -27,5 +34,25 @@
     max-width: 30vw;
     margin: 1vw;
     align-self: flex-start;
+}
+
+.attraction.card.website{
+    width: 30vw;
+}
+
+.booleans{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.childFriendly{
+    min-width: 155px;
+    max-width: 20vw;
+}
+
+.indoors{
+    min-width: 95px;
+    max-width: 20vw;
+    margin-right: 2vw;
 }
 

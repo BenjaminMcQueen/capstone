@@ -1,14 +1,14 @@
 body {
-  margin: 0;
+  background-color: red;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 95vw;
+  margin: 2.5vw;
 }
 
 code {
@@ -17,66 +17,79 @@ code {
 }
 
 /* Header.css */
-.header {
-  /* background-color: rgb(15, 3, 3); */
-  /* box-shadow: 0px 2px 4px rgba(225, 228, 204, 0.1); */
-  padding: 0.2rem 0;
-  margin-bottom: 3rem;
-  color: white;
-}
+
+
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  color: white;
+  width: 100%;
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
-  top: 0;
+  top: 0px;
+  left: 0px;
   z-index: 1030;
-  width: 100%;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
 }
+
 .nav-links {
+  margin-right: 2vw;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   color: white;
 }
+
 .nav-links li a {
   text-decoration: none;
-  color: #333;
   color: white;
   transition: color 0.3s ease-in-out;
 }
+
 .nav-links li a:hover {
-  color: #ff8c00;
+  color: red;
 }
+
+@media (max-width: 810px){
+  .logo {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .navbar{
+    margin-left: -2.5vw;
+    justify-content: center;
+  }
+} 
 
 /* Home css */
 .section1 {
   display: flex;
 }
+
 .img-container {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
+
 .img {
-  margin-top: 20px;
   width: 100%;
   height: 100%;
   object-fit: contain;
   opacity: 0.8;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -92,21 +105,25 @@ code {
   justify-content: center;
   align-items: center;
 }
+
 .home-img {
   width: 100%;
 }
+
 /* Footers css */
 footer {
   background-color: skyblue;
   color: white;
   font-size: 20px;
 }
+
 .anchors {
   display: flex;
   justify-content: space-around;
   margin: 10px;
   padding: 17px;
 }
+
 .anchors-footer {
   color: white;
   font-display: bold;
@@ -125,19 +142,23 @@ footer {
   background-color: #fff;
   box-shadow: 10px 50px 60px rgba(0, 0, 0, 0.1);
 }
+
 .image-container {
   flex: 1;
   padding: 20px;
 }
+
 .image-container img {
   max-width: 100%;
   height: auto;
   border-radius: 20%;
 }
+
 .content {
   flex: 2;
   padding: 60px;
 }
+
 .names {
   text-shadow: 20px 12px 4px rgba(7, 6, 6, 0.925);
   text-transform: uppercase;
@@ -148,28 +169,35 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
 h2 {
   color: #333;
 }
+
 p {
   color: rgb(63, 62, 62);
   margin-bottom: 15px;
 }
+
 .skill {
   color: #333;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
+
 .skills {
   margin-top: 20px;
 }
+
 .skills h2 {
   margin-top: 0;
 }
+
 .skills-list {
   list-style: none;
   padding: 0;
 }
+
 .skill-hover {
   background-color: #557ba3;
   color: #fff;
@@ -179,6 +207,7 @@ p {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
+
 .skill-hover:hover {
   background-color: #0773e7;
   transform: scale(1.05);
@@ -194,10 +223,12 @@ p {
     flex-direction: column;
     text-align: center;
   }
+
   .image-container {
     order: 2;
     padding: 0;
   }
+
   .content {
     order: 1;
     padding: 20px;
@@ -250,6 +281,7 @@ select {
   font-size: 18px;
   border-radius: 6px;
 }
+
 .button {
   background: rgb(0, 183, 255);
   color: rgb(255, 255, 255);
@@ -260,6 +292,7 @@ select {
   cursor: pointer;
   font-size: 18px;
 } 
+
 .contact-heading {
   margin-top: 140px;
 }

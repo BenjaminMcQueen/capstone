@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const Attraction = props => {
-  <div className='attraction card'>
-    <img src={props.attraction.imageURL} alt='an attraction of some kind' />
+const Attraction = (props) => {
+  return (
+    <div className='attraction-card red-background'>
+      <img src={props.attraction.imageURL || 'NA'} alt='an attraction of some kind' />
 
-    <div className='attraction card details'>
-      <h1 className='attraction card title'>{props.attraction.name}</h1>
-      <div className='attraction card description'>
-        <p>
-          {props.attraction.description}
-        </p>
-      </div>
-      <div className='booleans'>
-        <div className='attraction card indoors'>{props.attraction.indoors && `Indoors👍`}</div>
-        <div className='attraction card childFriendly'>{props.attraction.childFriendly && `Child Friendly👍`}</div>
-      </div>
-      <div className='addresses'>
-        <p className='attraction card website'>{props.attraction.website}</p>
-        <div className='full-address'>
-          <p>{props.attraction.address}</p>
-          <p>{props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}</p>
+      <div className='attraction-card-details coral-light-background'>
+        <h1 className='attraction-card-title'>{props.attraction.name}</h1>
+        <div className='attraction-card-description'>
+          <p>
+            {props.attraction.description || 'NA'}
+          </p>
+        </div>
+        <div className='attraction-card-booleans'>
+          <div className='attraction-card-indoors'>{props.attraction.indoors && `Indoors👍`}</div>
+          <div className='attraction-card-childFriendly'>{props.attraction.childFriendly && `Child Friendly👍`}</div>
+        </div>
+        <div className='attraction-card-addresses'>
+          <p className='attraction-card-website'>{props.attraction.website || 'NA'}</p>
+          <div className='attraction-card-full-address'>
+            <p>{props.attraction.address}</p>
+            <p>{props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>;
+  );
 };
 
 class Attractions extends Component {
@@ -36,22 +38,23 @@ class Attractions extends Component {
 
   componentDidMount() {
     console.log("Component Mounted");
-    axios.get('localhost:5000/attractions/')
-      .then(res => this.setState({ attraction: res.data }))
+    axios.get('http://localhost:5000/attractions/')
+      .then(res => { this.setState({ attractions: res.data }); })
       .catch(err => console.log(err));
   }
 
   //custom functions
   attractionList() {
     return this.state.attractions.map(currentAttraction => {
-      return <Attraction attraction={currentAttraction} key={currentAttraction._id}/>;
+      return <Attraction attraction={currentAttraction} key={currentAttraction._id} />;
     });
   }
 
   render() {
+    console.log("this.attractionList:", this.attractionList());
+
     return (
       <div>
-        there should be some stuff below here.
         {this.attractionList()}
       </div>
     );

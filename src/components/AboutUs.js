@@ -84,15 +84,10 @@ function AboutUs() {
         <div className="content">
           <h1 className="names">Benjamin McQueen</h1>
           <p className="intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            suscipit sunt ad perspiciatis fuga quidem expedita, ducimus, dicta
-            quibusdam iste vitae vero rerum quas explicabo recusandae quam
-            velit, optio eum!
+            I'm a problem solver, and an avid one at that! I like to take a steady approach to my code, and make it as efficient as I can be. I work hard, knowing that, while there's no shortcuts to success, if at all possible I can perhaps make anything easier for my someone, it's worth the effort.
           </p>
           <p className="hobbies-paragraph">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-            dolores expedita explicabo eligendi a corporis consequatur
-            repellendus molestiae quibusdam commodi.
+            Outside of coding, I have a wide variety of interests! While my primary interest is gaming (Both digital and analogue games alike), I also like to branch out into art (Sorry, I'm one of those shy artists!), literature, various fields of mathmatics, and sometimes even philosophy.
           </p>
           <div className="skills">
             <h2 className="skill">Some of my Skills</h2>

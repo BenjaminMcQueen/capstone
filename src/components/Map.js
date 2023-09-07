@@ -41,5 +41,4 @@ const Map = () => {
   return <div id="map" style={{ height: "100vh" }}></div>;
 };
 
-// export default Map;
-
+export default Map;

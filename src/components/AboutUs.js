@@ -47,14 +47,14 @@ function AboutUs() {
           <div className="skills">
             <h2 className="skill">Some of my Skills</h2>
             <ul className="skills-list">
-              <li className="skill-hover">HTML 5</li>
-              <li className="skill-hover">CSS3</li>
-              <li className="skill-hover">Bootstrap 5</li>
-              <li className="skill-hover">Node.js</li>
-              <li className="skill-hover">JavaScript</li>
-              <li className="skill-hover">MongoDB/noSQL</li>
-              <li className="skill-hover">React/Redux</li>
-              <li className="skill-hover">Express</li>
+              <li className="skill-hover social-icon-skill">HTML 5</li>
+              <li className="skill-hover social-icon-skill">CSS3</li>
+              <li className="skill-hover social-icon-skill">Bootstrap 5</li>
+              <li className="skill-hover social-icon-skill">Node.js</li>
+              <li className="skill-hover social-icon-skill">JavaScript</li>
+              <li className="skill-hover social-icon-skill">MongoDB/noSQL</li>
+              <li className="skill-hover social-icon-skill">React/Redux</li>
+              <li className="skill-hover social-icon-skill">Express</li>
             </ul>
           </div>
         </div>
@@ -97,14 +97,14 @@ function AboutUs() {
           <div className="skills">
             <h2 className="skill">Some of my Skills</h2>
             <ul className="skills-list">
-              <li className="skill-hover">HTML 5</li>
-              <li className="skill-hover">CSS3</li>
-              <li className="skill-hover">Bootstrap 5</li>
-              <li className="skill-hover">Node.js</li>
-              <li className="skill-hover">JavaScript</li>
-              <li className="skill-hover">MongoDB/noSQL</li>
-              <li className="skill-hover">React/Redux</li>
-              <li className="skill-hover">Express</li>
+              <li className="skill-hover social-icon-skill">HTML 5</li>
+              <li className="skill-hover social-icon-skill">CSS3</li>
+              <li className="skill-hover social-icon-skill">Bootstrap 5</li>
+              <li className="skill-hover social-icon-skill">Node.js</li>
+              <li className="skill-hover social-icon-skill">JavaScript</li>
+              <li className="skill-hover social-icon-skill">MongoDB/noSQL</li>
+              <li className="skill-hover social-icon-skill">React/Redux</li>
+              <li className="skill-hover social-icon-skill">Express</li>
             </ul>
           </div>
         </div>

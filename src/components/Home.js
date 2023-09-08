@@ -170,7 +170,8 @@ function Home() {
               </ul>
               <a
                 href="https://www.cincinnati-oh.gov/cincyparks/visit-a-park/find-a-parkfacility/smale-riverfront-park/"
-                className="more">
+                className="more"
+              >
                 Find more
               </a>
             </div>
@@ -195,9 +196,7 @@ function Home() {
               </a>
             </div>
             <div className="card">
-              <h2 className="card_heading">
-                Great American Ball Park
-              </h2>
+              <h2 className="card_heading">Great American Ball Park</h2>
               <p className="card_info">
                 Experience the thrill of America's favorite pastime by catching
                 a Cincinnati Reds baseball game at the iconic Great American

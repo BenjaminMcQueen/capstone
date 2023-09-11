@@ -3,23 +3,23 @@
   background-color: whitesmoke;
   border-radius: 0.5%;
   padding: 5px;
-  margin-top: 15vh;
+  /* margin-top: 10vh; */
 }
 
-@media (max-width: 810px){
-  .App{
+@media (max-width: 810px) {
+  .App {
     margin-top: 17vh;
   }
 }
 
-@media (max-width: 655px){
-  .App{
+@media (max-width: 655px) {
+  .App {
     margin-top: 22vh;
   }
 }
 
 /* attractions css */
-.attraction-card{
+.attraction-card {
   display: flex;
   flex-wrap: wrap;
   border-radius: 5%;
@@ -28,15 +28,15 @@
   margin-bottom: 5px;
 }
 
-.red-background{
+.red-background {
   background-color: #fe3434;
 }
 
-.coral-light-background{
+.coral-light-background {
   background-color: lightcoral;
 }
 
-.attraction-card-details{
+.attraction-card-details {
   align-content: center;
   border-radius: 5%;
   justify-content: center;
@@ -45,19 +45,19 @@
   padding: 5px;
 }
 
-.attraction-card-addresses{
+.attraction-card-addresses {
   align-content: center;
   justify-content: center;
 }
 
-@media (max-width: 550px){
-  .attraction-card-details{
-      align-content: center;
-      max-width: 85vw;
+@media (max-width: 550px) {
+  .attraction-card-details {
+    align-content: center;
+    max-width: 85vw;
   }
 }
 
-.attraction-card img{
+.attraction-card img {
   border: lightcoral 2px double;
   object-fit: contain;
   border-radius: 5%;
@@ -67,22 +67,22 @@
   align-self: flex-start;
 }
 
-.attraction-card-website{
+.attraction-card-website {
   width: 30vw;
   text-overflow: ellipsis;
 }
 
-.attraction-card-booleans{
+.attraction-card-booleans {
   display: flex;
   flex-wrap: wrap;
 }
 
-.attraction-card-childFriendly{
+.attraction-card-childFriendly {
   min-width: 155px;
   max-width: 20vw;
 }
 
-.attraction-card-indoors{
+.attraction-card-indoors {
   min-width: 95px;
   max-width: 20vw;
   margin-right: 2vw;

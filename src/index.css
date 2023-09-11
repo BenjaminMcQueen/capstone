@@ -1,14 +1,14 @@
 body {
-  /* background-color: red; */
+  /* background-color: rgb(154, 101, 101); */
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   max-width: 95vw;
   margin: 2.5vw;
+  align-content: center;
 }
 
 code {
@@ -23,19 +23,21 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 0.1rem;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1030;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
+  /* padding-left: 10px; */
+  margin-left: 2vw;
 }
 
 .nav-links {
@@ -49,8 +51,9 @@ code {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
-  transition: color 0.3s ease-in-out;
+  text-transform: uppercase;
+  color: rgb(12, 176, 241);
+  transition: color 0.2s ease-in-out;
 }
 
 .nav-links li a:hover {
@@ -104,9 +107,11 @@ code {
   align-items: center;
 }
 
+
 .home-img {
   width: 100%;
 }
+
 /* home/5 most visited places */
 ul {
   list-style: none;
@@ -205,21 +210,23 @@ ul {
 /* Footers css */
 footer {
   background-color: skyblue;
-  color: white;
+  color: rgb(178, 132, 132);
   font-size: 20px;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .anchors {
   display: flex;
   justify-content: space-around;
-  margin: 10px;
-  padding: 17px;
+  margin: 4px;
+  padding: 7px;
 }
 
 .anchors-footer {
   color: white;
   font-display: bold;
-  font-size: 25px;
+  font-size: 26px;
 }
 
 /* About us css */
@@ -439,3 +446,5 @@ select {
 .contact-heading {
   margin-top: 140px;
 }
+
+/* last moment edited */

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 5%;
-    background-color: #fe3434;
+    background-color: #ab6565;
     width: 95vw;
     justify-content: center;
     /* testing */
@@ -33,7 +33,7 @@
     max-height: 500px;
     max-width: 30vw;
     margin: 1vw;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .attraction.card.website{

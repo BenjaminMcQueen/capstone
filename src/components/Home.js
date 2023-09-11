@@ -5,16 +5,17 @@ import sportscinn from "./images/sportscinn.jpeg";
 import attractionscinn from "./images/attractionscinn.jpeg";
 import cincinnatimusichall from "./images/cincinnatimusichall.jpeg";
 
+
 function Home() {
   return (
     <div className="home-container">
       {/* Section 1 starts here */}
-      <div class="section1">
-        <div class="img-container">
-          <img class="img" src={attractionscinn} alt="Cincinnati downtown" />
+      <div className="section1">
+        <div className="img-container">
+          <img className="img" src={attractionscinn} alt="Cincinnati downtown" />
           {/* Content for image 1 */}
-          <div class="overlay">
-            <h1>Explore Downtown Cincinnati</h1>
+          <div className="overlay">
+            <h1 className="explore">Explore Downtown Cincinnati</h1>
             <h4>Discover the beauty of Cincinnati's downtown ariel view</h4>
           </div>
         </div>
@@ -88,7 +89,7 @@ function Home() {
           a diverse array of experiences that cater to every curiosity.
         </p>
         <img
-          class="home-img"
+          className="home-img"
           src={cincinnatiDowntown}
           alt="cincinnati attractions"
         />
@@ -110,7 +111,7 @@ function Home() {
           history is a testament to its enduring love affair with the games that
           keep hearts racing and spirits soaring.
         </p>
-        <img class="home-img" src={sportscinn} alt="cincinnati Sports spot" />
+        <img className="home-img" src={sportscinn} alt="cincinnati Sports spot" />
       </div>
       {/* Section 3 starts here*/}
       <div className="container">
@@ -253,8 +254,7 @@ function Home() {
           </a>
         </div>
         <div className="copyright">
-          <div className="container">
-            &copy; 2023 Aaditya Acharya. All rights reserved.
+          <div className="container text-center">
             <ul>
               <li>
                 <a href="home">site map</a>

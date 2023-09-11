@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <h1>Cincinnati Tourisms</h1>
+          <h1>Cincinnati Travels</h1>
         </div>
         <ul className="nav-links">
           <li>

@@ -78,7 +78,7 @@ class EditAttraction extends Component {
             .catch(err => {
                 console.log("Unable to fetch data");
                 console.log(err);
-                // window.location = '/attractionNotFound';
+                window.location = '/attractions/NotFound';
             });
     }
 

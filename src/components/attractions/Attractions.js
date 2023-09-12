@@ -28,7 +28,7 @@ const Attraction = (props) => {
       </div>
       <div className='button-container'>
         <button className='delete-attraction-button attraction-card-button' onClick={() => { props.deleteAttraction(props.attraction._id); }}>delete attraction</button>
-        <Link to={"/editAttractionWrapper/" + props.attraction._id}><button className='delete-attraction-button attraction-card-button'>edit attraction</button></Link>
+        <Link to={"edit/" + props.attraction._id}><button className='edit-attraction-button attraction-card-button'>edit attraction</button></Link>
       </div>
     </div>
   );
@@ -77,7 +77,7 @@ class Attractions extends Component {
       <div>
         <div className='add-attraction-cta'> {/* CTA is short for Call To Action. */}
           <h2 id='Message'>If you can see this, there was an error.</h2>
-          <Link to='/createAttraction' className='add-attraction-link'><h2>Add an attraction!</h2></Link>
+          <Link to='/attractions/createAttraction' className='add-attraction-link'><h2>Add an attraction!</h2></Link>
         </div>
         {this.attractionList()}
       </div>

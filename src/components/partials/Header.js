@@ -25,6 +25,9 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        <div className="Move-To-Footer-Container">
+          <a id="Move-To-Footer" href="#footer"> Go To Bottom </a>
+        </div>
       </nav>
     </header>
   );

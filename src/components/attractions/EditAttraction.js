@@ -49,10 +49,10 @@ class EditAttraction extends Component {
                 this.setState({ zipcode: e.target.value });
                 break;
             case 'indoors':
-                this.setState({ indoors: e.target.value });
+                this.setState({ indoors: e.target.checked });
                 break;
             case 'childFriendly':
-                this.setState({ childFriendly: e.target.value });
+                this.setState({ childFriendly: e.target.checked });
                 break;
             default:
                 console.log('unrecognized case: ', e.target.id);

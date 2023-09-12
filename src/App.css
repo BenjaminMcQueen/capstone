@@ -4,19 +4,6 @@
   background-color: whitesmoke;
   border-radius: 0.5%;
   padding: 5px;
-  /* margin-top: 10vh; */
-}
-
-@media (max-width: 810px) {
-  .App {
-    margin-top: 17vh;
-  }
-}
-
-@media (max-width: 655px) {
-  .App {
-    margin-top: 22vh;
-  }
 }
 
 /* Attractions CSS */
@@ -24,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 5%;
-  width: 99%;
+  width: 100%;
   justify-content: center;
   margin-bottom: 5px;
 }

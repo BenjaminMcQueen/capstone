@@ -107,7 +107,7 @@ class EditAttraction extends Component {
     render() {
         return (
             <div>
-                <h3>Submit an Attraction</h3>
+                <h3>Edit an Attraction</h3>
                 <form onSubmit={this.onSubmit}>
                     <label>Name of attraction:</label>
                     <input type='text' id='name' required className='' value={this.state.name} onChange={this.onChange} />

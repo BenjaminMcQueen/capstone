@@ -96,3 +96,20 @@
   max-width: 20vw;
   margin-right: 2vw;
 }
+
+.attractions-details-checkbox{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 25vw;
+}
+
+.attractions-details-checkbox input{
+  min-width: 25px;
+  max-width: 50px;
+}
+
+.attractions-details-checkbox-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

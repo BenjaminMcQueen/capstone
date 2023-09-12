@@ -8,7 +8,7 @@ import OverTheRhine from './Section4/OverTheRhine';
 const Section4 = () => {
   return (
     <div className="main">
-        <h1 className="main_heading">Top 5 things to do in Cincinnati</h1>
+        <h1 className="main_heading">Cincinnati's top 5 most visited places</h1>
         <div className="cards">
           <div className="cards_inner">
             <ArtMuseum />

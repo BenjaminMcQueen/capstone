@@ -51,16 +51,19 @@ class EditAttraction extends Component {
             case 'indoors':
                 this.setState({ indoors: e.target.value });
                 break;
+            case 'childFriendly':
+                this.setState({ childFriendly: e.target.value });
+                break;
             default:
                 console.log('unrecognized case: ', e.target.id);
         }
     }
 
     componentDidMount() {
-        let {id} = this.props;
+        let { id } = this.props;
         console.log("id:", id);
-        console.log('Outgoing Request: ', process.env.REACT_APP_BACKEND + id)
-        axios.get(process.env.REACT_APP_BACKEND+ 'attractions/' + id)
+        console.log('Outgoing Request: ', process.env.REACT_APP_BACKEND + id);
+        axios.get(process.env.REACT_APP_BACKEND + 'attractions/' + id)
             .then(res => {
                 this.setState({
                     name: res.data.name,
@@ -84,6 +87,7 @@ class EditAttraction extends Component {
 
     onSubmit(e) {
         e.preventDefault();
+        let { id } = this.props;
 
         const attraction = {
             name: this.state.name,
@@ -98,7 +102,7 @@ class EditAttraction extends Component {
             childFriendly: this.state.childFriendly
         };
 
-        axios.post(process.env.REACT_APP_BACKEND + 'attractions/', attraction)
+        axios.post(process.env.REACT_APP_BACKEND + 'attractions/' + id, attraction)
             .then(res => console.log(res.data));
 
         window.location = '/attractions';
@@ -125,10 +129,16 @@ class EditAttraction extends Component {
                     <input type='text' id='state' className='' value={this.state.state} onChange={this.onChange} />
                     <label>Zipcode of attraction:</label>
                     <input type='text' id='zipcode' className='' value={this.state.zipcode} onChange={this.onChange} />
-                    <label>Is this an indoors attraction?</label>
-                    <input type='checkbox' id='indoors' className='' value={this.state.indoors} onChange={this.onChange} />
-                    <label>Is this a child friendly attraction?</label>
-                    <input type='checkbox' id='childFriendly' className='' value={this.state.childFriendly} onChange={this.onChange} />
+                    <div className="attractions-details-checkbox-container">
+                        <div className="indoors-checkbox attractions-details-checkbox">
+                            <label>Is this an indoors attraction?</label>
+                            <input type='checkbox' id='indoors' className='' value={this.state.indoors} onChange={this.onChange} />
+                        </div>
+                        <div className="child-checkbox attractions-details-checkbox">
+                            <label>Is this a child friendly attraction?</label>
+                            <input type='checkbox' id='childFriendly' className='' value={this.state.childFriendly} onChange={this.onChange} />
+                        </div>
+                    </div>
 
                     <input type="submit" value="Submit Attraction" className="btn btn-primary" />
                 </form>

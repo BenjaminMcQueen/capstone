@@ -67,6 +67,14 @@
   align-self: flex-start;
 }
 
+.attraction-card .button-container{
+  align-self: center;
+}
+
+.attraction-card-button{
+  margin-left: 10px;
+}
+
 .attraction-card-website {
   width: 30vw;
   text-overflow: ellipsis;

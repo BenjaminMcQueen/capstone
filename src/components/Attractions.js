@@ -26,8 +26,10 @@ const Attraction = (props) => {
           </div>
         </div>
       </div>
-      <button className='delete-attraction-button' onClick={() => { props.deleteAttraction(props.attraction._id); }}>delete attraction</button>
-      <Link to={"/editAttractionWrapper/"+props.attraction._id}><button className='delete-attraction-button'>edit attraction</button></Link>
+      <div className='button-container'>
+        <button className='delete-attraction-button attraction-card-button' onClick={() => { props.deleteAttraction(props.attraction._id); }}>delete attraction</button>
+        <Link to={"/editAttractionWrapper/" + props.attraction._id}><button className='delete-attraction-button attraction-card-button'>edit attraction</button></Link>
+      </div>
     </div>
   );
 };
@@ -42,7 +44,7 @@ class Attractions extends Component {
   }
 
   componentDidMount() {
-    document.getElementById('Message').innerHTML = this.props.message ||  "Don't see your attraction here?";
+    document.getElementById('Message').innerHTML = this.props.message || "Don't see your attraction here?";
     console.log("Component Mounted");
     console.log("Pulling from ", process.env.REACT_APP_BACKEND + 'attractions/');
     axios.get(process.env.REACT_APP_BACKEND + 'attractions/')

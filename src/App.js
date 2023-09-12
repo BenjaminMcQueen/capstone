@@ -13,8 +13,8 @@ import AttractionRouter from "./components/AttractionRouter";
 function App() {
   return (
     <Router>
+    <Header />
       <div className="App">
-      <Header />
         <Routes className='Routes'>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/AboutUs" element={<AboutUs />} />
@@ -22,8 +22,8 @@ function App() {
           <Route exact path="/Map" element={<Map />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

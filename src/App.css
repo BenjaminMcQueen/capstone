@@ -100,7 +100,6 @@
 .attractions-details-checkbox{
   display: flex;
   flex-wrap: nowrap;
-  flex-basis: 25vw;
 }
 
 .attractions-details-checkbox input{

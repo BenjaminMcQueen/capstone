@@ -52,6 +52,8 @@ class CreateAttraction extends Component {
             case 'indoors':
                 this.setState({ indoors: e.target.value });
                 break;
+            case 'childFriendly':
+                this.setState({ childFriendly: e.target.value });
             default:
                 console.log('unrecognized case: ', e.target.id);
         }
@@ -98,7 +100,7 @@ class CreateAttraction extends Component {
                 <h3>Submit an Attraction</h3>
                 <form onSubmit={this.onSubmit}>
                     <label>Name of attraction:</label>
-                    <input type='text' id='name' required className='' value={this.state.name} onChange={this.onChange}/>
+                    <input type='text' id='name' required className='' value={this.state.name} onChange={this.onChange} />
                     <label>Descriptor for the attraction:</label>
                     <textarea id='description' className='' value={this.state.description} onChange={this.onChange}></textarea>
                     <label>Website of attraction (if applicable):</label>
@@ -113,10 +115,16 @@ class CreateAttraction extends Component {
                     <input type='text' id='state' className='' value={this.state.state} onChange={this.onChange} />
                     <label>Zipcode of attraction:</label>
                     <input type='text' id='zipcode' className='' value={this.state.zipcode} onChange={this.onChange} />
-                    <label>Is this an indoors attraction?</label>
-                    <input type='checkbox' id='indoors' className='' value={this.state.indoors} onChange={this.onChange} />
-                    <label>Is this a child friendly attraction?</label>
-                    <input type='checkbox' id='childFriendly' className='' value={this.state.childFriendly} onChange={this.onChange} />
+                    <div className="attractions-details-checkbox-container">
+                        <div className="indoors-checkbox attractions-details-checkbox">
+                            <label>Is this an indoors attraction?</label>
+                            <input type='checkbox' id='indoors' className='' value={this.state.indoors} onChange={this.onChange} />
+                        </div>
+                        <div className="child-checkbox attractions-details-checkbox">
+                            <label>Is this a child friendly attraction?</label>
+                            <input type='checkbox' id='childFriendly' className='' value={this.state.childFriendly} onChange={this.onChange} />
+                        </div>
+                    </div>
 
                     <input type="submit" value="Submit Attraction" className="btn btn-primary" />
                 </form>

@@ -17,13 +17,17 @@ code {
 }
 
 /* Navbar/Header.css */
+.nav-header{
+  margin-top: 7rem;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.1rem;
+  
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0px;

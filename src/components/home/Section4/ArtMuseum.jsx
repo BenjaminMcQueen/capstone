@@ -12,9 +12,11 @@ const ArtMuseum = () => {
                 <li> Free Admission</li>
                 <li>Ancient Artifacts</li>
             </ul>
-            <a href="https://www.cincinnatiartmuseum.org/" className="more">
+            <button className="place-box">
+            <a href="https://www.cincinnatiartmuseum.org/" className="more button">
                 Find more
             </a>
+            </button>
         </div>
     );
 };

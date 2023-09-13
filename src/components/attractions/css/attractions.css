@@ -11,8 +11,8 @@
 }
 
 .attraction-card .button-container {
-  align-self: center;
-  border: solid black 1px;
+  align-self: space-around;
+  width: 100%;
 }
 
 .attraction-card img {
@@ -30,14 +30,13 @@
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  border: solid black 1px;
+  align-content: center;
 }
 
 .attraction-card-booleans {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: solid black 1px;
   flex-basis: 100%;
   max-height: 25px;
 }
@@ -62,13 +61,6 @@
 
 }
 
-.attraction-card-full-address {
-  display: flex;
-  justify-content: flex-start;
-  border: solid black 1px;
-  height: fit-content;
-}
-
 .attraction-card-indoors {
   width: 95px;
   margin-right: 2vw;
@@ -87,7 +79,6 @@
   width: 80vw;
   max-height: 50px;
   align-self: first baseline;
-  border: solid black 1px;
 }
 
 .attraction-card-website {
@@ -95,7 +86,7 @@
   justify-content: center;
   align-content: center;
   height: 20px;
-  border: solid black 1px;
+  width: 100%;
 }
 
 
@@ -114,4 +105,18 @@
 .attractions-details-checkbox input {
   min-width: 25px;
   max-width: 50px;
+}
+
+.submit-attraction-box{
+  max-width: 95vw;
+  padding: 5px;
+}
+
+.submit-attraction-box input, textarea{
+}
+
+.submit-attraction-box .submit-button{
+  max-width: 75vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }

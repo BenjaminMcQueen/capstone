@@ -111,7 +111,7 @@ class EditAttraction extends Component {
 
     render() {
         return (
-            <div>
+            <div className="coral-light-background rounded submit-attraction-box">
                 <h3>Edit an Attraction</h3>
                 <form onSubmit={this.onSubmit}>
                     <label>Name of attraction:</label>
@@ -141,7 +141,7 @@ class EditAttraction extends Component {
                         </div>
                     </div>
 
-                    <input type="submit" value="Submit Attraction" className="btn btn-primary" />
+                    <input type="submit" value="Submit Attraction" className="btn btn-primary submit-button" />
                 </form>
             </div>
         );

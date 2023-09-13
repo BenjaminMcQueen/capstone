@@ -6,27 +6,25 @@ import "./css/attractions.css";
 const Attraction = (props) => {
   return (
     <div className='attraction-card red-background'>
-      <img src={props.attraction.imageURL || 'NA'} alt={'an image of ' + props.attraction.name + '.'} />
+      {props.attraction.imageURL && <img src={props.attraction.imageURL} alt={'an image of ' + props.attraction.name + '.'} />}
 
       <div className='attraction-card-details coral-light-background'>
         <h1 className='attraction-card-title'>{props.attraction.name}</h1>
         <div className='attraction-card-inner'>
           <div className='attraction-card-description'>
             <p>
-              {props.attraction.description || 'NA'}
+              {props.attraction.description || 'No description given.'}
             </p>
           </div>
           <div className='attraction-card-booleans'>
             <div className='attraction-card-indoors'>{props.attraction.indoors && `Indoors👍`}</div>
             <div className='attraction-card-childFriendly'>{props.attraction.childFriendly && `Child Friendly👍`}</div>
           </div>
+          {props.attraction.website && <a href={props.attraction.website} className='attraction-card-website'>🌐 Website</a>}
           <div className='attraction-card-addresses'>
-            <a href={props.attraction.website || '#'} className='attraction-card-website'>{props.attraction.website ? '🌐 Website' : ''}</a>
-            <div className='attraction-card-full-address'>
-              <p>{props.attraction.address}
-                <br />
-                {props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}</p>
-            </div>
+              {props.attraction.address} 
+              <br />
+              {props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}
           </div>
         </div>
       </div>

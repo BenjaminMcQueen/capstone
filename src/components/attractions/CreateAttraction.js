@@ -98,7 +98,7 @@ class CreateAttraction extends Component {
 
     render() {
         return (
-            <div>
+            <div className="coral-light-background rounded submit-attraction-box">
                 <h3>Submit an Attraction</h3>
                 <form onSubmit={this.onSubmit}>
                     <label>Name of attraction:</label>
@@ -110,13 +110,13 @@ class CreateAttraction extends Component {
                     <label>Link to an image (not the image itself):</label>
                     <input type='text' id='imageURL' className='' value={this.state.imageURL} onChange={this.onChange} />
                     <label>Address of attraction:</label>
-                    <input type='text' id='address' className='' value={this.state.address} onChange={this.onChange} />
+                    <input type='text' id='address' required className='' value={this.state.address} onChange={this.onChange} />
                     <label>City of attraction:</label>
-                    <input type='text' id='city' className='' value={this.state.city} onChange={this.onChange} />
+                    <input type='text' id='city' required className='' value={this.state.city} onChange={this.onChange} />
                     <label>State of attraction:</label>
-                    <input type='text' id='state' className='' value={this.state.state} onChange={this.onChange} />
+                    <input type='text' id='state' required className='' value={this.state.state} onChange={this.onChange} />
                     <label>Zipcode of attraction:</label>
-                    <input type='text' id='zipcode' className='' value={this.state.zipcode} onChange={this.onChange} />
+                    <input type='text' id='zipcode' required className='' value={this.state.zipcode} onChange={this.onChange} />
                     <div className="attractions-details-checkbox-container">
                         <div className="indoors-checkbox attractions-details-checkbox">
                             <label>Is this an indoors attraction?</label>
@@ -128,7 +128,7 @@ class CreateAttraction extends Component {
                         </div>
                     </div>
 
-                    <input type="submit" value="Submit Attraction" className="btn btn-primary" />
+                    <input type="submit" value="Submit Attraction" className="btn btn-primary submit-button" />
                 </form>
             </div>
         );

@@ -24,7 +24,7 @@ const Culture = () => {
           </p>
 
           <img
-            classNameName="cult-att-spo-img"
+            className="cult-att-spo-img"
             src={cincinnatimusichall}
             alt="cincinnati culture"
           />

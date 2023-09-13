@@ -9,6 +9,9 @@ function Header() {
         <div className="logo">
           <h1>Cincinnati Travels</h1>
         </div>
+        <div className="Move-To-Footer-Container">
+          <a id="Move-To-Footer" href="#footer"> Go To Bottom </a>
+        </div> 
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
@@ -26,9 +29,7 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div className="Move-To-Footer-Container">
-          <a id="Move-To-Footer" href="#footer"> Go To Bottom </a>
-        </div>
+       
       </nav>
     </header>
   );

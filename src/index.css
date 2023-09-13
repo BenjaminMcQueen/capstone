@@ -20,17 +20,17 @@ code {
 }
 
 /* Navbar/Header.css */
-:root{
-  --navbar-height: 100px;
+:root {
+  --navbar-height: 80px;
 }
 
-@media (max-width: 265px){
-  :root{
+@media (max-width: 265px) {
+  :root {
     --navbar-height: 150px;
   }
 }
 
-.nav-header{
+.nav-header {
   margin-bottom: var(--navbar-height);
 }
 
@@ -41,11 +41,12 @@ code {
   align-items: center;
   width: 100%;
   height: var(--navbar-height);
+  padding: 0.2rem;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;
+  z-index: 1030;
 }
 
 .logo {
@@ -64,22 +65,23 @@ code {
   color: white;
 }
 
-#Move-To-Footer{
+#Move-To-Footer {
   display: none;
+  text-decoration: underline;
 }
 
-@media (max-width: 700px)
-{
-  .nav-links{
+@media (max-width: 700px) {
+  .nav-links {
     display: none;
   }
 
-  #Move-To-Footer{
+  #Move-To-Footer {
     display: flex;
     width: 100vw;
     justify-content: center;
-    color:#007bff;
+    color: #027afa;
     margin-bottom: 10px;
+    /* background-color: #027afa; */
   }
 }
 
@@ -157,8 +159,8 @@ code {
 /* Section2 history */
 .history-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 36px; 
-  color: #333; 
+  font-size: 36px;
+  color: #333;
   text-align: center;
 }
 p {
@@ -181,7 +183,7 @@ p::first-letter {
 } */
 .cul-att-spo-para {
   flex: 1;
-  padding:5px 20px;
+  padding: 5px 20px;
 }
 .cult-att-spo-img {
   width: 100%;
@@ -239,8 +241,8 @@ ul {
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: left;
-  text-decoration: none; 
-} 
+  text-decoration: none;
+}
 .place-box {
   display: inline-block;
   background-color: #767a7d;
@@ -248,26 +250,23 @@ ul {
   border: 2px solid #f6f8f9;
   border-radius: 7px;
   color: #eceff1;
-  text-align: center; 
-  line-height: 40px; 
-} 
+  text-align: center;
+  line-height: 40px;
+}
 
 /* Responsive CSS */
 @media (max-width: 768px) {
   /* Adjust button size for smaller screens */
   .place-box {
-      width: 100px;
-      height: 30px;
-      line-height: 30px;
+    /* width: 100px;
+      height: 30px; */
+    line-height: 30px;
   }
 }
 .m5 {
   line-height: 25px;
   text-align: center;
 }
-
-
-
 
 /* Footers css */
 footer {

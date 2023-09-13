@@ -2,6 +2,7 @@ import React from "react";
 import Aaditya from "./images/Aaditya.jpeg";
 import Benjamin from "./images/benjamin.jpeg";
 import "font-awesome/css/font-awesome.min.css";
+import "./css/aboutus.css"
 
 function AboutUs() {
   return (
@@ -59,6 +60,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="image-container">
           <img src={Benjamin} alt="Benjamin McQueen" />
@@ -75,10 +77,6 @@ function AboutUs() {
               className="social-icon"
               href="https://github.com/settings/profile"
             >Github</a> <br /><hr />
-            <a
-              className="social-icon"
-              href="https://www.facebook.com/aaditya.acharya.37?mibextid=LQQJ4d"
-            >Facebook</a><hr />
           </h4>
         </div>
         <div className="content">

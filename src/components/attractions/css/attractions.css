@@ -3,8 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 5%;
-  width: 100%;
-  max-width: 93vw;
+  max-width: 92vw;
   justify-content: center;
   margin-bottom: 5px;
   padding: 5px;
@@ -38,7 +37,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   flex-basis: 100%;
-  max-height: 25px;
 }
 
 .attraction-card-button {
@@ -58,7 +56,10 @@
   max-width: 85vw;
   padding: 5px;
   margin: 5px;
+}
 
+.attraction-card-details p{
+  margin-bottom: 0;
 }
 
 .attraction-card-indoors {
@@ -77,7 +78,6 @@
 .attraction-card-title {
   display: block;
   width: 80vw;
-  max-height: 50px;
   align-self: first baseline;
 }
 

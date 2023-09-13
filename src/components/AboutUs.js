@@ -65,17 +65,17 @@ function AboutUs() {
         <div className="image-container">
           <img src={Benjamin} alt="Benjamin McQueen" />
           <h4>
-            <a href="mailto:chudaa203@gmail.com">
-              chudaa203@gmail.com
+            <a href="mailto:Benjamin.McQueen9@gmail.com">
+            Benjamin.McQueen9@gmail.com
             </a> <br /> <hr />
-            <a href="tel:+13153789574"> 315-378-9574</a> <hr />
+            <a href="tel:+16066435987"> 606-643-5987</a> <hr />
             <a
               className="social-icon"
               href="https://www.linkedin.com/in/aaditya-acharya-25575911a/"
             >Linkdin</a><br /><hr />
             <a
               className="social-icon"
-              href="https://github.com/settings/profile"
+              href="https://github.com/BenjaminMcQueen"
             >Github</a> <br /><hr />
           </h4>
         </div>
@@ -91,13 +91,18 @@ function AboutUs() {
             <h2 className="skill">Some of my Skills</h2>
             <ul className="skills-list">
               <li className="skill-hover social-icon-skill">HTML 5</li>
-              <li className="skill-hover social-icon-skill">CSS3</li>
               <li className="skill-hover social-icon-skill">Bootstrap 5</li>
               <li className="skill-hover social-icon-skill">Node.js</li>
               <li className="skill-hover social-icon-skill">JavaScript</li>
               <li className="skill-hover social-icon-skill">MongoDB/noSQL</li>
               <li className="skill-hover social-icon-skill">React/Redux</li>
               <li className="skill-hover social-icon-skill">Express</li>
+              <li className="skill-hover social-icon-skill">Java</li>
+              <li className="skill-hover social-icon-skill">Spring</li>
+              <li className="skill-hover social-icon-skill">Python</li>
+              <li className="skill-hover social-icon-skill">Flask</li>
+              <li className="skill-hover social-icon-skill">C#</li>
+              <li className="skill-hover social-icon-skill">.net</li>
             </ul>
           </div>
         </div>

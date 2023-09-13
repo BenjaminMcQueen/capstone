@@ -74,7 +74,7 @@ const Map = () => {
     L.marker([39.1060, -84.5140]).addTo(map).bindPopup("Cincinnati Farmers Market"); // Cincinnati Farmers Market
     L.marker([39.1038, -84.5168]).addTo(map).bindPopup("Cincinnati Historic District"); // Cincinnati Historic District
     L.marker([39.0982, -84.5108]).addTo(map).bindPopup("Cincinnati Skate Park"); // Cincinnati Skate Park
-    L.marker([39.1042, -84.5105]).addTo(map).bindPopup("Cincinnati Rock Climbing Gym"); // Cincinnati Rock Climbing Gym
+    L.marker([39.1042, -84.5105]).addTo(map).bindPopup("Cincinnati Rock Climbing Gym"); // Cincinnati Rock Climbing Gym <--Benjamin McQueen
   }, []); //empty array run this effect only once
 
   return <div id="map" style={{ height: "75vh" }}></div>;

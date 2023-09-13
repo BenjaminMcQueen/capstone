@@ -1,5 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
+import "./css/attractions.css"
 
 class EditAttraction extends Component {
     constructor(props) {

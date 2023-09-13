@@ -1,0 +1,117 @@
+/* Attractions CSS */
+.attraction-card {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5%;
+  width: 100%;
+  max-width: 93vw;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.attraction-card .button-container {
+  align-self: center;
+  border: solid black 1px;
+}
+
+.attraction-card img {
+  border: lightcoral 2px double;
+  object-fit: contain;
+  border-radius: 5%;
+  max-height: 500px;
+  max-width: 30vw;
+  min-width: 200px;
+  margin: 5px;
+  align-self: center;
+}
+
+.attraction-card-addresses {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  border: solid black 1px;
+}
+
+.attraction-card-booleans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid black 1px;
+  flex-basis: 100%;
+  max-height: 25px;
+}
+
+.attraction-card-button {
+  margin: 5px;
+}
+
+.attraction-card-childFriendly {
+  width: 155px;
+}
+
+.attraction-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 5%;
+  justify-content: center;
+  max-width: 85vw;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.attraction-card-full-address {
+  display: flex;
+  justify-content: flex-start;
+  border: solid black 1px;
+  height: fit-content;
+}
+
+.attraction-card-indoors {
+  width: 95px;
+  margin-right: 2vw;
+}
+
+.attraction-card-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 80vw;
+}
+
+.attraction-card-title {
+  display: block;
+  width: 80vw;
+  max-height: 50px;
+  align-self: first baseline;
+  border: solid black 1px;
+}
+
+.attraction-card-website {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  height: 20px;
+  border: solid black 1px;
+}
+
+
+/* Add/edit attraction-css*/
+.attractions-details-checkbox {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.attractions-details-checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.attractions-details-checkbox input {
+  min-width: 25px;
+  max-width: 50px;
+}

@@ -21,8 +21,9 @@ const Attraction = (props) => {
         <div className='attraction-card-addresses'>
           <a href={props.attraction.website || '#'} className='attraction-card-website'>{props.attraction.website ? '🌐 Website' : ''}</a>
           <div className='attraction-card-full-address'>
-            <p>{props.attraction.address}</p>
-            <p>{props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}</p>
+            <p>{props.attraction.address}
+            <br/>
+            {props.attraction.city + ', ' + props.attraction.state + ' ' + props.attraction.zipcode}</p>
           </div>
         </div>
       </div>

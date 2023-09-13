@@ -132,11 +132,11 @@ class EditAttraction extends Component {
                     <div className="attractions-details-checkbox-container">
                         <div className="indoors-checkbox attractions-details-checkbox">
                             <label>Is this an indoors attraction?</label>
-                            <input type='checkbox' id='indoors' className='' value={this.state.indoors} onChange={this.onChange} />
+                            <input type='checkbox' id='indoors' className='' checked={this.state.indoors} onChange={this.onChange} />
                         </div>
                         <div className="child-checkbox attractions-details-checkbox">
                             <label>Is this a child friendly attraction?</label>
-                            <input type='checkbox' id='childFriendly' className='' value={this.state.childFriendly} onChange={this.onChange} />
+                            <input type='checkbox' id='childFriendly' className='' checked={this.state.childFriendly} onChange={this.onChange} />
                         </div>
                     </div>
 

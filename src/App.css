@@ -9,11 +9,13 @@
 /* Attractions CSS */
 .attraction-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: column;
   border-radius: 5%;
   width: 100%;
+  max-width: 93vw;
   justify-content: center;
   margin-bottom: 5px;
+  padding: 5px;
 }
 
 .red-background {
@@ -28,21 +30,16 @@
   align-content: center;
   border-radius: 5%;
   justify-content: center;
-  max-width: 65vw;
-  min-width: 400px;
+  width: 85vw;
   padding: 5px;
+  margin: 5px;
+  
 }
 
 .attraction-card-addresses {
-  align-content: center;
-  justify-content: center;
-}
-
-@media (max-width: 550px) {
-  .attraction-card-details {
-    align-content: center;
-    max-width: 85vw;
-  }
+  display: flex;
+  align-self: center;
+  border: solid black 1px;
 }
 
 .attraction-card img {
@@ -51,36 +48,50 @@
   border-radius: 5%;
   max-height: 500px;
   max-width: 30vw;
-  margin: 1vw;
+  min-width: 200px;
+  margin: 5px;
   align-self: flex-start;
 }
 
 .attraction-card .button-container{
   align-self: center;
-}
-
-.attraction-card-button{
-  margin-left: 10px;
-}
-
-.attraction-card-website {
-  width: 30vw;
-  text-overflow: ellipsis;
+  border: solid black 1px;
 }
 
 .attraction-card-booleans {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  border: solid black 1px;
+  max-width: 300px;
+}
+
+.attraction-card-button{
+  margin: 5px;
+  
+}
+
+.attraction-card-full-address{
+  display: auto;
+  align-content: start;
+  border: solid black 1px;
+  height: fit-content;
+}
+
+.attraction-card-website {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  border: solid black 1px;
 }
 
 .attraction-card-childFriendly {
-  min-width: 155px;
-  max-width: 20vw;
+  width: 155px;
 }
 
 .attraction-card-indoors {
-  min-width: 95px;
-  max-width: 20vw;
+  width: 95px;
   margin-right: 2vw;
 }
 
@@ -97,5 +108,5 @@
 .attractions-details-checkbox-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }

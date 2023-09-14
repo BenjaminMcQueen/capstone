@@ -2,8 +2,8 @@ import React from 'react';
 
 const Section3 = () => {
     return (
-        <div className="container">
-            <h2>Why visit Cincinnati?</h2>
+        <div className="visit-container">
+            <h2 className='text-center'>Why visit Cincinnati?</h2>
             <p>
                 Visit Cincinnati, a city where history and innovation intertwine to
                 create an unforgettable experience. Immerse yourself in its rich

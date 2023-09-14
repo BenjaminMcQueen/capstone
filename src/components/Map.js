@@ -17,7 +17,7 @@ const Map = () => {
       container._leaflet_id = null;
     }
     // initializing the map
-    var map = L.map("map").setView([39.1031, -84.512], 10);
+    var map = L.map("map", {dragging: true}).setView([39.1031, -84.512], 10);
     // Adding a title to the map views
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:

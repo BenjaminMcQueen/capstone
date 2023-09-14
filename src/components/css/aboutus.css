@@ -7,16 +7,19 @@
     padding: 5px;
     box-shadow: 10px 50px 60px rgba(0, 0, 0, 0.1);
     border-radius: 5%;
+    margin-bottom: 100px;
   }
   
   .image-container {
     flex: 1;
     padding: 5px;
+    align-self: flex-start;
   }
   
   .image-container img {
     max-width: 100%;
     border-radius: 20%;
+    max-height: 50vh;
   }
   
   .content {
@@ -75,13 +78,14 @@
   
   @media (max-width: 768px) {
     .container {
-      flex-direction: column;
+      flex-direction: column-reverse;
       text-align: center;
     }
   
     .image-container {
       order: 2;
       padding: 0;
+      align-self: center;
     }
   
     .content {

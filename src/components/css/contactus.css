@@ -1,43 +1,73 @@
-  /* Contact us */
-  /* form Css */
-  .form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 60px;
-    background-color: #f1bbbb;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  label {
-    text-align: left;
-    display: block;
-  }
-  
-  .contact-heading {
-    font-size: 50px;
-    color: #000000;
-    margin-bottom: 30px;
-  }
-  
-  input,
-  textarea,
-  select {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    display: block;
-    font-size: 18px;
-    border-radius: 6px;
-  }
-  
-  .button {
-    background: rgb(0, 183, 255);
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-size: 18px;
-  }
+/* Contact us */
+/* form Css */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #f1bbbb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+.contact-heading {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.button {
+  background: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Frequently asked questions */
+.FAQ-container {
+  border: 44px solid #ccc;
+  border-radius: 77px;
+  /* padding: 20px; */
+  margin: 30px;
+}
+.FAQ-heading {
+  /* text-align: center; */
+}
+.FAQ-h3 {
+  color: black;
+  text-align: left;
+}
+.FAQ-p {
+  color: gray;
+  text-align: left;
+  /* margin-left: 0; */
+}
+.FAQ-p p::first-letter {
+  margin-left: 0;
+}
+
+.red {
+  color: red;
+  padding: 0 5px 0 0;
+  margin: 0 10px 0 0;
+} 
+

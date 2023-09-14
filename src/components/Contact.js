@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/contactus.css"
+import "./css/contactus.css";
 
 function Contact() {
   // Defining initial state of form data
@@ -85,84 +85,112 @@ function Contact() {
       </div>
 
       <div className="FAQ-container">
-        <h2>FAQ / Frequenty Asked Questions</h2>
+        <h2 className="FAQ-heading">FAQ / Frequenty Asked Questions</h2>
         <ul>
-          <li className="h3-p">
-            <h3>
-              Question: What are the top tourist attractions in Cincinnati?
-            </h3>
-            <p>
-              Answer: Some of the top attractions in Cincinnati include the
-              Cincinnati Zoo, Cincinnati Art Museum, and the Cincinnati Museum
-              Center at Union Terminal.
-            </p>
-          </li>
-          <h3>Question:How can I get to Cincinnati from the airport?</h3>
-          <p>
-            Cincinnati has a major airport, Cincinnati/Northern Kentucky
-            International Airport (CVG), which is well-connected to the city
-            center by taxi, shuttle, and public transportation.
-          </p>
-          <h3>Question:What is the best time to visit Cincinnati?</h3>
-          <p>
-            The best time to visit Cincinnati is during the spring and fall when
-            the weather is pleasant. Summers can be hot, and winters can be
-            cold.
-          </p>
+            <li>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> What are the top tourist
+                    attractions in Cincinnati?
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> Answer:</span> Some of the top attractions
+                    in Cincinnati include the Cincinnati Zoo, Cincinnati Art Museum,
+                    and the Cincinnati Museum Center at Union Terminal.
+                </p>
+            </li>
+            <li>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span>How can I get to Cincinnati
+                    from the airport?
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span>Cincinnati has a major
+                    airport, Cincinnati/Northern Kentucky International Airport (CVG),
+                    which is well-connected to the city center by taxi, shuttle, and
+                    public transportation.
+                </p>
+            </li>
+            <li>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span>What is the best time to
+                    visit Cincinnati?
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span>The best time to visit
+                    Cincinnati is during the spring and fall when the weather is
+                    pleasant. Summers can be hot, and winters can be cold.
+                </p>
+            </li>
+            <li>
 
-          <h3> Question: "Are there any outdoor activities in Cincinnati?",</h3>
-          <p>
-            {" "}
-            answer: "Yes, Cincinnati offers a variety of outdoor activities,
-            including hiking trails in local parks like Mt. Airy Forest and
-            great opportunities for biking along the Ohio River. You can also
-            enjoy boating and paddleboarding on the river.",
-          </p>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> "Are there any outdoor
+                    activities in Cincinnati?",
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span> "Yes, Cincinnati offers a
+                    variety of outdoor activities, including hiking trails in local
+                    parks like Mt. Airy Forest and great opportunities for biking
+                    along the Ohio River. You can also enjoy boating and
+                    paddleboarding on the river.",
+                </p>
+            </li>
+            <li>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> "What is the Cincinnati
+                    food scene known for?",
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span> "Cincinnati is known for its
+                    unique chili, often served over spaghetti or hot dogs. You can
+                    also explore the city's vibrant food markets, try local craft
+                    beers, and enjoy farm-to-table dining experiences.",
+                </p>
+            </li>
+            <li>
 
-          <h3> Question: "What is the Cincinnati food scene known for?",</h3>
-          <p>
-            {" "}
-            answer: "Cincinnati is known for its unique chili, often served over
-            spaghetti or hot dogs. You can also explore the city's vibrant food
-            markets, try local craft beers, and enjoy farm-to-table dining
-            experiences.",
-          </p>
-          <h3>
-            {" "}
-            Question: "Are there family-friendly attractions in Cincinnati?",
-          </h3>
-          <p>
-            {" "}
-            answer: "Absolutely! Cincinnati has several family-friendly
-            attractions, such as the Cincinnati Zoo & Botanical Garden, the
-            Newport Aquarium, and the Children's Museum. The city also hosts
-            numerous festivals and events suitable for all ages.",
-          </p>
-          <h3>
-            {" "}
-            Question: "How do I purchase tickets for local events and
-            attractions?",
-          </h3>
-          <p>
-            {" "}
-            answer: "You can buy tickets for most local events and attractions
-            online through their official websites or at the ticket counters
-            on-site. Some attractions may offer discounted tickets for children,
-            seniors, and groups.",
-          </p>
-          <h3>
-            {" "}
-            Question: "What neighborhoods should I explore in Cincinnati?",
-          </h3>
-          <p>
-            {" "}
-            answer: "Cincinnati has many unique neighborhoods to explore, each
-            with its own charm. Consider visiting Over-the-Rhine for its
-            historic architecture, Hyde Park for shopping and dining, and Mt.
-            Adams for scenic views of the city.",
-          </p>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> "Are there family-friendly
+                    attractions in Cincinnati?",
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span> "Absolutely! Cincinnati has
+                    several family-friendly attractions, such as the Cincinnati Zoo &
+                    Botanical Garden, the Newport Aquarium, and the Children's Museum.
+                    The city also hosts numerous festivals and events suitable for all
+                    ages.",
+                </p>
+            </li>
+            <li>
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> "How do I purchase tickets
+                    for local events and attractions?",
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span> "You can buy tickets for
+                    most local events and attractions online through their official
+                    websites or at the ticket counters on-site. Some attractions may
+                    offer discounted tickets for children, seniors, and groups.",
+                </p>
+            </li>
+            <li>
+
+                <h3 className="FAQ-h3">
+                    <span className="red"> Question:</span> "What neighborhoods should
+                    I explore in Cincinnati?",
+                </h3>
+                <p className="FAQ-p">
+                    <span className="red"> answer:</span> "Cincinnati has many unique
+                    neighborhoods to explore, each with its own charm. Consider
+                    visiting Over-the-Rhine for its historic architecture, Hyde Park
+                    for shopping and dining, and Mt. Adams for scenic views of the
+                    city.",
+                </p>
+            </li>
         </ul>
-      </div>
+    </div>
+
+
     </div>
   );
 }

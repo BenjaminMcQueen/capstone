@@ -13,6 +13,7 @@ const attractionRoutes = require('./routes/attractions')
 const app = express();
 const port = process.env.PORT || 5000; //falsy .env ports (0, undefined, false, etc) default to 5000
 
+// middlewares
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());

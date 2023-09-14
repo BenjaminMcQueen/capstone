@@ -17,7 +17,7 @@ const Attraction = (props) => {
             </p>
           </div>
           <div className='attraction-card-booleans'>
-            <div className='attraction-card-indoors'>{props.attraction.indoors && `Indoors👍`}</div>
+            <div className='attraction-card-indoors'>{props.attraction.indoors && `Indoors🌆`}</div> 
             <div className='attraction-card-childFriendly'>{props.attraction.childFriendly && `Child Friendly👍`}</div>
           </div>
           {props.attraction.website && <a href={props.attraction.website} className='attraction-card-website'>🌐 Website</a>}

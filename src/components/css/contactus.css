@@ -61,13 +61,22 @@ select {
   text-align: left;
   /* margin-left: 0; */
 }
-.FAQ-p p::first-letter {
-  margin-left: 0;
-}
-
+/* .FAQ-p p::first-letter {
+  text-align: left;
+} */
 .red {
   color: red;
   padding: 0 5px 0 0;
   margin: 0 10px 0 0;
-} 
+}
 
+/* media query for mobile device for FAQ */
+
+@media (max-width: 768px) {
+  .FAQ-container {
+    border: 14px solid #ccc;
+    border-radius: 17px;
+    /* padding: 20px; */
+    margin: 5px;
+  }
+}

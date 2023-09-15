@@ -1,6 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
-import "./css/attractions.css"
+import "./css/attractions.css";
 
 
 class CreateAttraction extends Component {
@@ -64,36 +64,36 @@ class CreateAttraction extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-        const attraction = {
-            name: this.state.name,
-            description: this.state.description,
-            website: this.state.website,
-            imageURL: this.state.imageURL,
-            address: this.state.address,
-            city: this.state.city,
-            state: this.state.state,
-            zipcode: this.state.zipcode,
-            indoors: this.state.indoors,
-            childFriendly: this.state.childFriendly
-        };
+        let req = "https://maps.googleapis.com/maps/api/geocode/json?address=" +
+            this.state.address.replaceAll(" ", "%") + "%" + this.state.city.replaceAll(" ", "%") + "%" + this.state.state
+            + "&key=" + process.env.REACT_APP_GMAPS_API_KEY;
 
-        axios.post(process.env.REACT_APP_BACKEND + 'attractions/', attraction)
-            .then(res => console.log(res.data));
+        axios.get(req)
+            .then(res => {
 
-        window.location = '/attractions';
+                let {lat, lng} = res.data.results[0].geometry.location;
 
-        this.setState({
-            name: '',
-            description: '',
-            website: '',
-            imageURL: '',
-            address: '',
-            city: 'Cincinnati',
-            state: 'Ohio',
-            zipcode: '45201',
-            indoors: false,
-            childFriendly: false
-        });
+                const attraction = {
+                    name: this.state.name,
+                    description: this.state.description,
+                    website: this.state.website,
+                    imageURL: this.state.imageURL,
+                    address: this.state.address,
+                    city: this.state.city,
+                    state: this.state.state,
+                    zipcode: this.state.zipcode,
+                    indoors: this.state.indoors,
+                    childFriendly: this.state.childFriendly,
+                    lat,
+                    lng
+                };
+
+                axios.post(process.env.REACT_APP_BACKEND + 'attractions/', attraction)
+                    .then(res => console.log(res.data));
+
+                window.location = '/attractions';
+            })
+            .catch(err => console.log(err));
     }
 
     render() {

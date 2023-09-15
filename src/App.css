@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   background-color: whitesmoke;
-  border-radius: 0.5%;
+  border-radius: 15px;
   padding: 5px;
   margin-bottom: 20px;
   border: solid 5px #280000;

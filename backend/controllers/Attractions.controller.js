@@ -36,6 +36,7 @@ module.exports.update = async (req, res) => {
     Attraction.findById(req.params.id)
         .then(attraction => { 
             console.log(attraction);
+            console.log(req);
             
             if(req.body.name) {attraction.name = req.body.name}
             if(req.body.description) {attraction.description = req.body.description}
@@ -47,9 +48,12 @@ module.exports.update = async (req, res) => {
             if(req.body.zipcode) {attraction.zipcode = req.body.zipcode}
             if(req.body.indoors !== undefined) {attraction.indoors = req.body.indoors}
             if(req.body.childFriendly !== undefined) {attraction.childFriendly = req.body.childFriendly}
+            attraction.lat = req.body.lat;
+            attraction.lng = req.body.lng;
             
             attraction.save()
-                .then(() => res.json("Attraction updated!"))
+                .then(() => {res.json("Attraction updated!");
+                                console.log("Updated attraction: ", attraction)})
                 .catch(err => ErrorHandler.diagnoseAndRespond(err, res));
          })
         .catch(err => ErrorHandler.diagnoseRequestAndRespond(err, req, res));

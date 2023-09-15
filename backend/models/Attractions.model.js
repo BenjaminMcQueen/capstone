@@ -10,7 +10,9 @@ const attractionSchema = new mongoose.Schema({
     state: { type: String, required: true, default: "Ohio"},
     zipcode: { type: String, required: true}, //I don't expect to use this for any calculations, so String.
     indoors: { type: Boolean },
-    childFriendly: { type: Boolean }
+    childFriendly: { type: Boolean },
+    lat: { type: Number },
+    lng: { type: Number }
 });
 
 const Attraction = mongoose.model("Attraction", attractionSchema);

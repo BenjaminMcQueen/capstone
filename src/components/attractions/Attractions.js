@@ -20,7 +20,7 @@ const Attraction = (props) => {
             <div className='attraction-card-indoors'>{props.attraction.indoors && `Indoors🌆`}</div> 
             <div className='attraction-card-childFriendly'>{props.attraction.childFriendly && `Child Friendly👍`}</div>
           </div>
-          {props.attraction.website && <a href={props.attraction.website} className='attraction-card-website'>🌐 Website</a>}
+          {props.attraction.website && <a href={props.attraction.website} className='attraction-card-website'><button className='attraction-card-button smaller'>🌐 Website</button></a>}
           <div className='attraction-card-addresses'>
               {props.attraction.address} 
               <br />
@@ -29,8 +29,8 @@ const Attraction = (props) => {
         </div>
       </div>
       <div className='button-container'>
-        <button className='delete-attraction-button attraction-card-button' onClick={() => { props.deleteAttraction(props.attraction._id); }}>delete attraction</button>
-        <Link to={"edit/" + props.attraction._id}><button className='edit-attraction-button attraction-card-button'>edit attraction</button></Link>
+        <button className='delete-attraction-button attraction-card-button scaling-text' onClick={() => { props.deleteAttraction(props.attraction._id); }}>Delete Attraction</button>
+        <Link to={"edit/" + props.attraction._id}><button className='edit-attraction-button attraction-card-button scaling-text'>Edit Attraction</button></Link>
       </div>
     </div>
   );
@@ -79,7 +79,7 @@ class Attractions extends Component {
       <div>
         <div className='add-attraction-cta'> {/* CTA is short for Call To Action. */}
           <h2 id='Message'>If you can see this, there was an error.</h2>
-          <Link to='/attractions/createAttraction' className='add-attraction-link'><h2>Add an attraction!</h2></Link>
+          <Link to='/attractions/createAttraction' className='add-attraction-link'><button className='add-attraction-button scaling-text'>Add an attraction!</button></Link>
         </div>
         {this.attractionList()}
       </div>

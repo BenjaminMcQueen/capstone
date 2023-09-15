@@ -2,7 +2,7 @@
 .attraction-card {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 5%;
+  border-radius: 20px;
   max-width: 92vw;
   justify-content: center;
   margin-bottom: 5px;
@@ -10,14 +10,24 @@
 }
 
 .attraction-card .button-container {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
   align-self: space-around;
-  width: 100%;
+  width: 50%;
+  padding: 5px;
+}
+
+.button-container button{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
 }
 
 .attraction-card img {
-  border: lightcoral 2px double;
+  border: #FF9898 2px double;
   object-fit: contain;
-  border-radius: 5%;
+  border-radius: 15px;
   max-height: 500px;
   max-width: 30vw;
   min-width: 200px;
@@ -41,6 +51,44 @@
 
 .attraction-card-button {
   margin: 5px;
+  background-color: #FF9898;
+  width: 33%;
+  height: 50px;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.add-attraction-button {
+  margin: 5px;
+  width: 33%;
+  height: 50px;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #FF0000;
+}
+
+.add-attraction-button:hover {
+  background-color: #FF9898;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.attraction-card-button.smaller {
+  margin: 5px;
+  background-color: #dd7777;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.attraction-card-button:hover {
+  background-color: whitesmoke;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .attraction-card-childFriendly {
@@ -51,14 +99,14 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  border-radius: 5%;
+  border-radius: 35px;
   justify-content: center;
   max-width: 85vw;
   padding: 5px;
   margin: 5px;
 }
 
-.attraction-card-details p{
+.attraction-card-details p {
   margin-bottom: 0;
 }
 
@@ -82,11 +130,13 @@
 }
 
 .attraction-card-website {
-  display: block;
+  display: inline-block;
   justify-content: center;
   align-content: center;
-  height: 20px;
-  width: 100%;
+  height: 25px;
+  width: fit-content;
+  margin: 5px;
+  margin-right: 10px;
 }
 
 
@@ -107,16 +157,25 @@
   max-width: 50px;
 }
 
-.submit-attraction-box{
+.submit-attraction-box {
   max-width: 95vw;
   padding: 5px;
 }
 
-.submit-attraction-box input, textarea{
-}
-
-.submit-attraction-box .submit-button{
+.submit-attraction-box .submit-button {
   max-width: 75vw;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+/* Special CSS for buttons*/
+@media (max-width: 750px) {
+  .scaling-text {
+    font-size: large;
+  }
+}
+@media (max-width: 350px) {
+  .scaling-text {
+    font-size: small;
+  }
 }

@@ -29,18 +29,10 @@ const Map = () => {
         const allAttractions = res.data; 
 
         allAttractions.forEach(Att => {
-          let req = "https://maps.googleapis.com/maps/api/geocode/json?address=" +
-          Att.address.replaceAll(" ", "%") + "%" + Att.city.replaceAll(" ", "%") + "%" + Att.state
-          + "&key=" + process.env.REACT_APP_GMAPS_API_KEY;
-
-          axios.get(req)
-          .then(res => {
-
-          let {lat, lng} = res.data.results[0].geometry.location;
+          console.log(Att);
+          let {lat, lng} = Att;
 
           L.marker([lat, lng]).addTo(map).bindPopup(Att.name);
-          })
-          .catch(err => console.log(err));
         })
       })
       .catch(err => console.log(err));
@@ -89,8 +81,8 @@ const Map = () => {
     // L.marker([39.101, -84.5176]).addTo(map).bindPopup("Cincinnati Axe Throwing"); // Cincinnati Axe Throwing
     // L.marker([39.1065, -84.5110]).addTo(map).bindPopup("Cincinnati Riverwalk"); // Cincinnati Riverwalk
     // L.marker([39.0995, -84.5135]).addTo(map).bindPopup("Cincinnati Cyclones Ice Hockey"); // Cincinnati Cyclones Ice Hockey
-    // L.marker([39.1045, -84.5162]).addTo(map).bindPopup("Cincinnati Bengals Stadium"); // Cincinnati Bengals Stadium
-    // L.marker([39.1020, -84.5139]).addTo(map).bindPopup("Cincinnati Brewing Company"); // Cincinnati Brewing Company<--Benjamin McQueen
+    // L.marker([39.1045, -84.5162]).addTo(map).bindPopup("Cincinnati Bengals Stadium"); // Cincinnati Bengals Stadium<--Benjamin McQueen
+    // L.marker([39.1020, -84.5139]).addTo(map).bindPopup("Cincinnati Brewing Company"); // Cincinnati Brewing Company
     // L.marker([39.1080, -84.5110]).addTo(map).bindPopup("Cincinnati Comedy Club"); // Cincinnati Comedy Club
     // L.marker([39.1000, -84.5175]).addTo(map).bindPopup("Cincinnati Riverboat Cruise"); // Cincinnati Riverboat Cruise
     // L.marker([39.1060, -84.5140]).addTo(map).bindPopup("Cincinnati Farmers Market"); // Cincinnati Farmers Market

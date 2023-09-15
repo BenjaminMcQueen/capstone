@@ -167,22 +167,31 @@ ul {
 }
 
 .place-box {
-  display: inline-block;
-  background-color: #767a7d;
-  padding: 5px;
-  border: 2px solid #f6f8f9;
+  /* display: inline-block; */
+  align-self: flex-end;
+  justify-self: center;
+  border: 2px solid #280000;
   border-radius: 7px;
-  color: #eceff1;
-  text-align: center;
   line-height: 40px;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.place-box .button{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  padding: 0;
+  justify-content: center;
 }
 
 /* Responsive CSS */
 @media (max-width: 768px) {
   /* Adjust button size for smaller screens */
   .place-box {
-    /* width: 100px;
-      height: 30px; */
     line-height: 30px;
   }
 }

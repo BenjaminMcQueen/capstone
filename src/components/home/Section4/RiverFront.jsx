@@ -21,7 +21,7 @@ const RiverFront = () => {
           href="https://www.cincinnati-oh.gov/cincyparks/visit-a-park/find-a-parkfacility/smale-riverfront-park/"
           className="more button"
         >
-          Find more
+          Learn More
         </a>
       </button>
     </div>

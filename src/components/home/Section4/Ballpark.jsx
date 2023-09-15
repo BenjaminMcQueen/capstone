@@ -18,7 +18,7 @@ const Ballpark = () => {
       </div>
       <button className="place-box">
         <a href="https://www.mlb.com/reds/" className="more button ">
-          Find more
+        Learn More
         </a>
       </button>
     </div>

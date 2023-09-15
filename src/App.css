@@ -18,6 +18,14 @@
 }
 
 /* Other Properties */
-.rounded{
+.rounded {
   border-radius: 5%;
+}
+
+.homepage-card-header {
+  background-color: #FF4C4C;
+  border-radius: 5px;
+  border: solid 2px #280000;
+  width: 100%;
+  margin-bottom: 0px;
 }

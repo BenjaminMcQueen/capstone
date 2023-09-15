@@ -4,7 +4,7 @@ import cincinnatiDowntown from "../../images/cincinnatiDowntown.jpeg";
 const HomepageAttractions = () => {
   return (
     <div className="attractions">
-      <h3>Attractions</h3>
+      <h2 className="homepage-card-header">Attractions</h2>
       <div className="container">
       <div className="row">
         <p className="cul-att-spo-para">

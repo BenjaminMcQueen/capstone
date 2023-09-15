@@ -56,7 +56,7 @@ code {
   display: inline-block;
   background-color: #FF0000;
   padding: 10px 20px;
-  border: 2px solid whitesmoke;
+  border: 2px solid #280000;
   border-radius: 5px;
 }
 
@@ -117,6 +117,9 @@ ul {
 .main {
   max-width: 100%;
   padding: 1em;
+  border-radius: 5%;
+  background-color: #FF4C4C;
+  border:  #280000 solid 2px;
 }
 
 .main_heading {
@@ -128,11 +131,11 @@ ul {
 
 .card_heading {
   text-align: center;
-  color: white;
+  color: #280000;
 }
 
 .card_info {
-  color: #eceff1;
+  color: #280000;
   text-align: left;
 }
 
@@ -153,10 +156,10 @@ ul {
   /* grid-template-rows: auto auto auto 1fr; */
   /* align-items: start; */
   /* gap: 1em; */
-  color: #eceff1;
-  background-color: #2b2b2b;
-  border: 1px solid #eceff133;
+  color: #280000;
+  background-color: #FF9898;
   border-radius: 15px;
+  border: #280000 solid 2px;
 }
 
 .more {
@@ -176,16 +179,22 @@ ul {
   width: 100%;
   height: 50px;
   margin-top: 10px;
-  padding: 5px;
+  padding: 1px;
+  background-color: #280000;
 }
 
 .place-box .button{
+  justify-self: center;
+  align-self: center;
   display: flex;
   width: 100%;
   height: 100%;
   margin-top: 0px;
   padding: 0;
   justify-content: center;
+  align-content: center;
+  background-color: #FF0000;
+  color: whitesmoke
 }
 
 /* Responsive CSS */

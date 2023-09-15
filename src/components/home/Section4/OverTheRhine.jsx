@@ -19,7 +19,7 @@ const OverTheRhine = () => {
       </div>
       <button className="place-box">
         <a href="https://www.otrchamber.com/" className="more button">
-          Find more
+        Learn More
         </a>
       </button>
     </div>

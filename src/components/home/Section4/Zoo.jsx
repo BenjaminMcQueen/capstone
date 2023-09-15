@@ -18,7 +18,7 @@ const Zoo = () => {
       </div>
       <button className="place-box">
         <a href="https://cincinnatizoo.org/" className="more button">
-          Find more
+          Learn More
         </a>
       </button>
     </div>

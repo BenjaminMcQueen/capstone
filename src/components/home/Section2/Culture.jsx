@@ -4,7 +4,7 @@ import cincinnatimusichall from "../../images/cincinnatimusichall.jpeg";
 const Culture = () => {
   return (
     <div className="culture">
-      <h2>Culture</h2>
+      <h2 className="homepage-card-header">Culture</h2>
       <div className="container">
         <div className="row">
           <p className="cul-att-spo-para">

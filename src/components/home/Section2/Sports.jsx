@@ -4,7 +4,7 @@ import sportscinn from "../../images/sportscinn.jpeg";
 const Sports = () => {
   return (
     <div className="sports">
-      <h3>Sports</h3>
+      <h2 className="homepage-card-header">Sports</h2>
       <div className="container">
         <div className="row">
           <p className="cul-att-spo-para">

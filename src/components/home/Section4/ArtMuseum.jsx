@@ -14,7 +14,7 @@ const ArtMuseum = () => {
             </div>
             <button className="place-box">
             <a href="https://www.cincinnatiartmuseum.org/" className="more button">
-                Find more
+            Learn More
             </a>
             </button>
         </div>

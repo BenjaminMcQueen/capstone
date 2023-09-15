@@ -10,8 +10,8 @@ function AboutUs() {
       <div className="container">
         <div className="image-container">
           <img src={Aaditya} alt="Aaditya Acharya" />
-          <h4>
-            <a href="mailto:chudaa203@gmail.com">
+          <h4 className="email">
+            <a href="mailto:chudaa203@gmail.com"  className="email">
               CHUDAA203@GMAIL.COM
             </a> <br /> <hr />
             <a href="tel:+13153789574"> 315-378-9574</a> <hr />

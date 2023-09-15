@@ -7,11 +7,11 @@ const ArtMuseum = () => {
             <p className="card_info">
                 Immerse yourself in the world of art at the Cincinnati Art Museum, where a diverse collection of masterpieces from various cultures and time periods await your exploration. From ancient artifacts to contemporary works, this museum offers a captivating journey through human creativity and expression2
             </p>
-            <ul className="m5">
-                <li>Impressive Collection</li>
-                <li> Free Admission</li>
-                <li>Ancient Artifacts</li>
-            </ul>
+            <div className="m5">
+                Impressive Collection<br/>
+                Free Admission<br/>
+                Ancient Artifacts
+            </div>
             <button className="place-box">
             <a href="https://www.cincinnatiartmuseum.org/" className="more button">
                 Find more

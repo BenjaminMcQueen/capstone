@@ -11,11 +11,11 @@ const RiverFront = () => {
         afternoon or a romantic evening, making it a must-visit destination for
         those seeking tranquility and natural beauty in Cincinnati.
       </p>
-      <ul className="m5">
-        <li>Underground Railroad History</li>
-        <li>Paddlewheelers</li>
-        <li>Spectacular Sunsets</li>
-      </ul>
+      <div className="m5">
+        Underground Railroad History<br/>
+        Paddlewheelers<br/>
+        Spectacular Sunsets
+      </div>
       <button className="place-box">
         <a
           href="https://www.cincinnati-oh.gov/cincyparks/visit-a-park/find-a-parkfacility/smale-riverfront-park/"

@@ -12,11 +12,11 @@ const OverTheRhine = () => {
         Over-the-Rhine promises a delightful and culturally rich experience in
         the heart of Cincinnati.
       </p>
-      <ul className="m5">
-        <li>Historical Architecture</li>
-        <li>Renovation and Revival</li>
-        <li>Brewery Heritage</li>
-      </ul>
+      <div className="m5">
+        Historical Architecture<br/>
+        Renovation and Revival<br/>
+        Brewery Heritage<br/>
+      </div>
       <button className="place-box">
         <a href="https://www.otrchamber.com/" className="more button">
           Find more

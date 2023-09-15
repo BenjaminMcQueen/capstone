@@ -11,11 +11,11 @@ const Ballpark = () => {
         home team as you immerse yourself in the rich history and excitement of
         baseball in Cincinnati.
       </p>
-      <ul className="m5">
-        <li>Big Red Machine</li>
-        <li>First Professional Baseball Team</li>
-        <li>The Gap</li>
-      </ul>
+      <div className="m5">
+        Big Red Machine<br/>
+        First Professional Baseball Team<br/>
+        The Gap
+      </div>
       <button className="place-box">
         <a href="https://www.mlb.com/reds/" className="more button ">
           Find more

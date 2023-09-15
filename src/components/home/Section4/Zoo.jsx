@@ -11,11 +11,11 @@ const Zoo = () => {
         also boasts stunning botanical gardens, offering a perfect blend of
         education and natural wonder.
       </p>
-      <ul className="m5">
-        <li>Fiona the Hippo</li>
-        <li>Botanical Diversity:</li>
-        <li>Conservation Efforts</li>
-      </ul>
+      <div className="m5">
+        Fiona the Hippo<br/>
+        Botanical Diversity:<br/>
+        Conservation Efforts<br/>
+      </div>
       <button className="place-box">
         <a href="https://cincinnatizoo.org/" className="more button">
           Find more

@@ -14,19 +14,24 @@ function Header() {
         </div> 
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+          <button className="nav-btn">
+            <Link to="/">Home</Link></button>
           </li>
           <li>
-            <Link to="/AboutUs">About Us</Link>
+          <button className="nav-btn">
+            <Link to="/AboutUs">About Us</Link></button>
           </li>
           <li>
-            <Link to="/attractions">Attractions</Link>
+          <button className="nav-btn">
+            <Link to="/attractions">Attractions</Link></button>
           </li>
           <li>
-            <Link to="/Map">Map</Link>
+          <button className="nav-btn">
+            <Link to="/Map">Map</Link></button>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+          <button className="nav-btn">
+            <Link to="/contact">Contact</Link></button>
           </li>
         </ul>
        

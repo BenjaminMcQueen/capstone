@@ -18,7 +18,7 @@ const OverTheRhine = () => {
         Brewery Heritage<br/>
       </div>
       <button className="place-box">
-        <a href="https://www.otrchamber.com/" className="more button">
+        <a href="https://www.otrchamber.com/" className="more button lighten-on-hover push-in-on-click">
         Learn More
         </a>
       </button>

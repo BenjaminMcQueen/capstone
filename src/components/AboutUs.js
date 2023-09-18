@@ -58,23 +58,22 @@ function AboutUs() {
             <h2 className="skill">Some of my Skills</h2>
             <div className="skills-wrapper">
               <div className="skills-list1">
-                <ul>
-                  <li className="skill-hover social-icon-skill">HTML 5</li>
-                  <li className="skill-hover social-icon-skill">CSS3</li>
-                  <li className="skill-hover social-icon-skill">Bootstrap 5</li>
-                  <li className="skill-hover social-icon-skill">Node.js</li>
-                </ul>
+                <div>
+                  <div className="skill-hover social-icon-skill">HTML 5</div>
+                  <div className="skill-hover social-icon-skill">CSS3</div>
+                  <div className="skill-hover social-icon-skill">Bootstrap 5</div>
+                  <div className="skill-hover social-icon-skill">Node.js</div>
+                </div>
               </div>
-
               <div className="skills-list2">
-                <ul>
-                  <li className="skill-hover social-icon-skill">JavaScript</li>
-                  <li className="skill-hover social-icon-skill">
+                <div>
+                  <div className="skill-hover social-icon-skill">JavaScript</div>
+                  <div className="skill-hover social-icon-skill">
                     MongoDB/noSQL
-                  </li>
-                  <li className="skill-hover social-icon-skill">React/Redux</li>
-                  <li className="skill-hover social-icon-skill">Express</li>
-                </ul>
+                  </div>
+                  <div className="skill-hover social-icon-skill">React/Redux</div>
+                  <div className="skill-hover social-icon-skill">Express</div>
+                </div>
               </div>
             </div>
           </div>
@@ -128,28 +127,27 @@ function AboutUs() {
             <h2 className="skill">Some of my Skills</h2>
             <div className="skills-wrapper">
               <div className="skills-list1">
-                <ul>
-                  <li className="skill-hover social-icon-skill">HTML 5</li>
-                  <li className="skill-hover social-icon-skill">Bootstrap 5</li>
-                  <li className="skill-hover social-icon-skill">Node.js</li>
-                  <li className="skill-hover social-icon-skill">JavaScript</li>
-                  <li className="skill-hover social-icon-skill">
+                <div>
+                  <div className="skill-hover social-icon-skill">HTML 5</div>
+                  <div className="skill-hover social-icon-skill">Bootstrap 5</div>
+                  <div className="skill-hover social-icon-skill">Node.js</div>
+                  <div className="skill-hover social-icon-skill">JavaScript</div>
+                  <div className="skill-hover social-icon-skill">
                     MongoDB/noSQL
-                  </li>
-                  <li className="skill-hover social-icon-skill">React/Redux</li>
-                </ul>
+                  </div>
+                  <div className="skill-hover social-icon-skill">React/Redux</div>
+                </div>
               </div>
-
               <div className="skills-list2">
-                <ul>
-                  <li className="skill-hover social-icon-skill">Express</li>
-                  <li className="skill-hover social-icon-skill">Java</li>
-                  <li className="skill-hover social-icon-skill">Spring</li>
-                  <li className="skill-hover social-icon-skill">Python</li>
-                  <li className="skill-hover social-icon-skill">Flask</li>
-                  <li className="skill-hover social-icon-skill">C#</li>
-                  <li className="skill-hover social-icon-skill">.net</li>
-                </ul>
+                <div>
+                  <div className="skill-hover social-icon-skill">Express</div>
+                  <div className="skill-hover social-icon-skill">Java</div>
+                  <div className="skill-hover social-icon-skill">Spring</div>
+                  <div className="skill-hover social-icon-skill">Python</div>
+                  <div className="skill-hover social-icon-skill">Flask</div>
+                  <div className="skill-hover social-icon-skill">C#</div>
+                  <div className="skill-hover social-icon-skill">.net</div>
+                </div>
               </div>
             </div>
           </div>

@@ -29,3 +29,16 @@
   width: 100%;
   margin-bottom: 0px;
 }
+
+.lighten-on-hover{
+  transition: 0.3s;
+}
+
+.lighten-on-hover:hover {
+  background-color: #ff9898;
+}
+
+.push-in-on-click:active{
+  margin-top: -2.5px;
+  margin-left: -2.5px;
+}

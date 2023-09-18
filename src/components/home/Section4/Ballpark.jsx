@@ -17,7 +17,7 @@ const Ballpark = () => {
         The Gap
       </div>
       <button className="place-box">
-        <a href="https://www.mlb.com/reds/" className="more button ">
+        <a href="https://www.mlb.com/reds/" className="more button lighten-on-hover push-in-on-click">
         Learn More
         </a>
       </button>

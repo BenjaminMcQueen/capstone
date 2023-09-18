@@ -19,7 +19,7 @@ const RiverFront = () => {
       <button className="place-box">
         <a
           href="https://www.cincinnati-oh.gov/cincyparks/visit-a-park/find-a-parkfacility/smale-riverfront-park/"
-          className="more button"
+          className="more button lighten-on-hover push-in-on-click"
         >
           Learn More
         </a>

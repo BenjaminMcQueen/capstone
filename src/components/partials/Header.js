@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./css/header.css"
+import "./css/header.css";
 
 function Header() {
   return (
@@ -10,31 +10,26 @@ function Header() {
           <h1>Cincinnati Travels</h1>
         </div>
         <div className="Move-To-Footer-Container">
-          <a id="Move-To-Footer" href="#footer"> Go To Bottom </a>
-        </div> 
+          <a id="Move-To-Footer" href="#footer"><button className="nav-btn">Go To Bottom</button></a>
+        </div>
         <ul className="nav-links">
           <li>
-          <button className="nav-btn">
-            <Link to="/">Home</Link></button>
+            <Link to="/"><button className="nav-btn">Home</button></Link>
           </li>
           <li>
-          <button className="nav-btn">
-            <Link to="/AboutUs">About Us</Link></button>
+            <Link to="/AboutUs"><button className="nav-btn">About Us</button></Link>
           </li>
           <li>
-          <button className="nav-btn">
-            <Link to="/attractions">Attractions</Link></button>
+            <Link to="/attractions"><button className="nav-btn">Attractions</button></Link>
           </li>
           <li>
-          <button className="nav-btn">
-            <Link to="/Map">Map</Link></button>
+            <Link to="/Map"><button className="nav-btn">Map</button></Link>
           </li>
           <li>
-          <button className="nav-btn">
-            <Link to="/contact">Contact</Link></button>
+            <Link to="/contact"><button className="nav-btn">Contact</button></Link>
           </li>
         </ul>
-       
+
       </nav>
     </header>
   );

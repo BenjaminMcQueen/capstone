@@ -2,7 +2,7 @@
   --navbar-height: 80px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   :root {
     --navbar-height: 125px;
   }
@@ -32,7 +32,7 @@
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  /* padding-left: 10px; */
+  transition: 0.3s;
 }
 
 .nav-links {
@@ -41,14 +41,15 @@
   flex-wrap: wrap;
   gap: 1rem;
   color: white;
+  transition: 0.3s;
 }
 
 #Move-To-Footer {
   display: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }
@@ -66,7 +67,7 @@
 .nav-links li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(255, 174, 0);
+  color: #ff9898;
   transition: color 0.2s ease-in-out;
 }
 
@@ -88,21 +89,24 @@
 /* last minute CSS nav-btns */
 .nav-btn {
   background-color: #280000;
+  color: whitesmoke;
   font-size: 14px;
   padding: 5px 12px;
   border-radius: 6px;
   font-weight: bold;
+  transition: 0.3s;
 }
+
 .nav-btn:hover {
   background-color: #ff9898;
-  font-size: 26px;
+  font-size: 14px;
   padding: 5px 12px;
   border-radius: 6px;
   color: #ff0000;
+  cursor: pointer;
 }
 
 .logo:hover {
-  font-size: 1rem;
   font-weight: bold;
   color: #ff4c4c;
   text-transform: uppercase;

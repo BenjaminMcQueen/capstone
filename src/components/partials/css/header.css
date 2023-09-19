@@ -111,3 +111,16 @@
   color: #ff4c4c;
   text-transform: uppercase;
 }
+
+/* last minute Styling */
+.word {
+  font-weight: bold;
+  font-size: 30px;
+  color:white;
+}
+.backward-letter {
+  display: inline-block;
+  transform: scaleX(-1);
+  font-size: 25px;
+  color:#ff0000;
+}

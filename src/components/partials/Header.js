@@ -7,7 +7,7 @@ function Header() {
     <header className="nav-header">
       <nav className="navbar">
         <div className="logo">
-          <h1>Cincinnati Travels</h1>
+          <h1 className="word">cin<span className="backward-letter"> c </span>innati Trav<span className="backward-letter"> e </span>ls</h1>
         </div>
         <div className="Move-To-Footer-Container">
           <a id="Move-To-Footer" href="#footer"><button className="nav-btn">Go To Bottom</button></a>

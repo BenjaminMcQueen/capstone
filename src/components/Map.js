@@ -29,7 +29,6 @@ const Map = () => {
         const allAttractions = res.data; 
 
         allAttractions.forEach(Att => {
-          console.log(Att);
           let {lat, lng} = Att;
 
           L.marker([lat, lng]).addTo(map).bindPopup(Att.name);

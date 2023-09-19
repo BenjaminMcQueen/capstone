@@ -5,9 +5,10 @@ import "./css/header.css";
 function Header() {
   return (
     <header className="nav-header">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fuggles" />
       <nav className="navbar">
         <div className="logo">
-          <h1 className="word">cin<span className="backward-letter"> c </span>innati Trav<span className="backward-letter"> e </span>ls</h1>
+          <h1 className="word"><span className="big-letter">c</span>incinnati <span className="big-letter">T</span>ravels</h1>
         </div>
         <div className="Move-To-Footer-Container">
           <a id="Move-To-Footer" href="#footer"><button className="nav-btn">Go To Bottom</button></a>

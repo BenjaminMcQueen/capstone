@@ -2,15 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer id="footer"> <br /> <hr /> <br />
+    <footer id="footer">
+      {" "}
+      <br /> <hr /> <br />
       <div className="anchors">
-        <a className="anchors-footer" href="/home">
+        <a className="anchors-footer" href="/">
           Home
         </a>
         <a className="anchors-footer" href="/aboutus">
           About us
         </a>
-        
+
         <a className="anchors-footer" href="/map">
           Map
         </a>
@@ -35,14 +37,12 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-          <li className="footer-li">
+            <li className="footer-li">
               &copy; 2023 Aaditya Acharya/Benjamin McQueen. <br />
               All rights reserved.
               <hr />
             </li>
-            </ul>
-
-         
+          </ul>
         </div>
       </div>
     </footer>
